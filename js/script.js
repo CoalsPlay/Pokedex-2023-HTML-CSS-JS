@@ -241,8 +241,6 @@ const getPokemon = async data => {
             } else {
                 imgPokemon.setAttribute('src', data.sprites.front_default);
             }
-
-            console.log('naniiii');
         });
     });
 
