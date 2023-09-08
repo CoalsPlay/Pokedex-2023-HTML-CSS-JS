@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pokedex</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <script defer src="./js/script.js"></script>
+    </head>
+    <body>
+        
+        <div class="container">
+
+            <div class="pokedex-left">
+
+                <div class="pokedex-left-top">
+
+                    <div class="balls-sensors">
+                        <div class="blue-circle">
+                            <div class="blue-circle-content"></div>
+                        </div>
+
+                        <div class="circle red-circle"></div>
+                        <div class="circle yellow-circle"></div>
+                        <div class="circle green-circle"></div>
+                    </div>
+                    
+                </div>
+
+                <div class="pokedex-closed">
+                    <button id="btnOpen"></button>
+                    <div class="line-bottom"></div>
+                </div>
+
+                <div class="pokedex-left-bottom">
+                    
+                    <main class="pokedex-label">
+
+                        <div class="general-screen">
+
+                            <div class="screen-top">
+                                <div class="sensor-screen red-circle"></div>
+                                <div class="sensor-screen red-circle"></div>
+                            </div>
+                            
+                            <div class="screen-lcd">
+                                
+                                <div class="screen-container">
+
+                                    <form action="" onsubmit="searchPokemon(event)" class="formSearch">
+                                        <div class="input-search-group">
+                                            <input type="text" name="pokemon" class="search-pokemon" autocomplete="off" placeholder="Buscar Pokémon o Nº">
+                                            <button class="btn-search-input">></button>
+                                        </div>
+                                    </form>
+
+                                    <div class="screen-content"></div>
+
+                                </div>
+                            
+                            </div>
+
+                            <!-- Modal de pantalla de Créditos -->
+                            <div class="screen-credits">
+                                <div class="credits-container">
+                                    <div class="credits-text">
+                                        <h3>Pokedex 2023</h3>
+                                        Creador: <a href="https://twitter.com/CoalsPlay">CoalsPlay</a><br>
+                                        Repositorio: <a href="https://github.com/CoalsPlay">GitHub</a><br>
+                                        API: <a href="https://pokeapi.co/">PokeApi</a><br>
+                                        Creado: 04/09/2023
+                                    </div>
+                                    <button class="btn-pokedex-screen" onclick="history.go(-1); return false;" id="backPokedex">Volver</button>
+                                </div>
+                            </div>
+                            <!-- Fin de Modal -->
+
+                            <div class="screen-bottom">
+                                
+                                <div class="red-light"></div>
+
+                                <div class="screen-grilles">
+                                    <hr>
+                                    <hr>
+                                    <hr>
+                                    <hr>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <div class="pokedex-buttons">
+
+                            <div class="pokedex-buttons-left">
+                                <div class="buttons-top">
+                                    <button class="dark-btn">C</button>
+                                    <button class="red-lg-btn"></button>
+                                    <button class="blue-lg-btn"></button>
+                                </div>
+                                
+                                <div class="bottom-lcd">
+                                    <button class="btn-pokedex-screen" onclick="loadMorePk()" id="loadMore">Cargar todos los Pokémon</button>
+                                    <button class="btn-pokedex-screen" onclick="loadCredits()" id="loadCredits">Créditos</button>
+                                    <button class="btn-pokedex-screen offBtn" onclick="offPokedex()" id="offPokedex">Apagar Pokedex</button>
+                                </div>
+
+                            </div>
+
+                            <div class="pokedex-buttons-right">
+                                <div class="joystick-h">
+                                    <button id="rotateImgLeft" class="btn-joystick-L"><</button>
+                                    <button id="rotateImgRight" class="btn-joystick-R">></button>
+                                </div>
+                                <div class="joystick-v"></div>
+                            </div>
+                            
+                        </div>
+
+                    </main>
+
+                    <div class="pokedex-hinge">
+                        <div class="hinge-details"></div>
+                        <div class="hinge-details"></div>
+                    </div>
+
+                </div>
+
+            </div>
+            
+
+            <div class="pokedex-right">
+                
+                <div class="pokedex-right-top">
+
+                    <div class="screen-right">
+                        <input type="text" placeholder="Consultar..." class="input-right-screen">
+                    </div>
+
+                    <div class="keyboard">
+
+                        <button class="key"></button>
+                        <button class="key"></button>
+                        <button class="key"></button>
+                        <button class="key"></button>
+                        <button class="key"></button>
+                        <button class="key"></button>
+                        <button class="key"></button>
+                        <button class="key"></button>
+                        <button class="key"></button>
+                        <button class="key"></button>
+                        
+                    </div>
+
+                </div>
+
+                <div class="lg-btns">
+                    <button class="lg-dark-btn"></button>
+                    <button class="lg-dark-btn"></button>
+                </div>
+
+                <div class="pokedex-right-middle">
+
+                    <div class="btns-light-container">
+                        <button class="light-btn"></button>
+                        <button class="light-btn"></button>
+                    </div>
+
+                    <div class="yellow-light"></div>
+                    
+                </div>
+
+                <div class="pokedex-right-bottom">
+                    <div class="screen-sm-bottom"></div>
+                    <div class="screen-sm-bottom"></div>
+                </div>
+                
+            </div>
+
+        </div> <!-- End Container -->
+    
+        <footer>
+            Pokedex 1º generación - Desarrollado por <a href="https://x.com/CoalsPlay">CoalsPlay</a> 2023 &copy;
+        </footer>
+
+    </body>
+</html>
